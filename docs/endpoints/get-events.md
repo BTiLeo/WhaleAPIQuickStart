@@ -1,3 +1,8 @@
+## Intro
+
+This API only has two methods, /getevents returns events, markets, and selections info. Event info includes event name, participants/team names, event start time, and other fields. For market info we provide main markets (for example: soccer we provide HDP, OU, 1x2; basketball we provide spread, OU, moneyline). For selection info we provide four kinds of odds styles and points. All returned fields are explained in this document.
+
+![Whale API guide image](images/guide.png)
 ## getevents
 
 URL: \[POST] <https://bti-odds.bsports.asia/api/SportsDataAPI/getevents\\>

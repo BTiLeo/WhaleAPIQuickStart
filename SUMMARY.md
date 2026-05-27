@@ -1,7 +1,5 @@
 # Summary
 
-* [QuickStart Integration](README.md)
-
 ## API Core Documentation
 * [System Introduction](docs/introduction.md)
 
@@ -11,3 +9,6 @@
 
 ## Development & Support
 * [Troubleshooting](docs/troubleshooting.md)
+
+## Integration sample
+* [QuickStart Integration](README.md)
