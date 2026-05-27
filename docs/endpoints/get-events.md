@@ -4,7 +4,6 @@ This API only has two methods, /getevents returns events, markets, and selection
 
 ![Whale API guide image](images/guide.png)
 
-
 ## getevents
 
 URL: \[POST] <https://bti-odds.bsports.asia/api/SportsDataAPI/getevents\\>
