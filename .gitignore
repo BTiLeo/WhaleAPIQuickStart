@@ -1,0 +1,13 @@
+# .NET Core
+bin/
+obj/
+appsettings.Development.json
+
+# Node.js (for future)
+node_modules/
+.env
+
+# General
+.DS_Store
+.vs/
+*.user

@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{2575E9BB-4248-45C0-AC1C-572202A7E4AD}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\app.js = frontend\app.js
+		frontend\index.html = frontend\index.html
+		frontend\style.css = frontend\style.css
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendCSharp", "BackendCSharp\BackendCSharp.csproj", "{DFE64551-33FB-4670-A4C4-6592F0B15FA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendPython", "BackendPython", "{D7448AE4-33BD-4903-8C05-F602CD097571}"
+	ProjectSection(SolutionItems) = preProject
+		BackendPython\app.py = BackendPython\app.py
+		BackendPython\requirements.txt = BackendPython\requirements.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendPHP", "BackendPHP", "{71D06F8B-31FA-44C4-B69B-AFEE866331EE}"
+	ProjectSection(SolutionItems) = preProject
+		BackendPHP\index.php = BackendPHP\index.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendNodeJS", "BackendNodeJS", "{4413BA02-4049-4E02-BD99-2F3ED8CD66EF}"
+	ProjectSection(SolutionItems) = preProject
+		BackendNodeJS\app.js = BackendNodeJS\app.js
+		BackendNodeJS\package.json = BackendNodeJS\package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendGo", "BackendGo", "{94A83CB9-4AE9-4352-A594-13C2812D75E5}"
+	ProjectSection(SolutionItems) = preProject
+		BackendGo\main.go = BackendGo\main.go
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFE64551-33FB-4670-A4C4-6592F0B15FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE64551-33FB-4670-A4C4-6592F0B15FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE64551-33FB-4670-A4C4-6592F0B15FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE64551-33FB-4670-A4C4-6592F0B15FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

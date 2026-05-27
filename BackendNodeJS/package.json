@@ -1,0 +1,13 @@
+{
+  "name": "whale-api-quickstart-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js Backend Wrapper for Whale API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
