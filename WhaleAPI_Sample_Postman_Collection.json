@@ -1,0 +1,46 @@
+{
+	"info": {
+		"name": "Whale API - Direct Sample",
+		"description": "This collection allows PMs, QA, and Commercial teams to instantly test the Whale API without setting up a local server. It uses a public mock key (`ShowMeSample`) to return a static sports data response.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch Sports Events (Direct)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"PKey\": \"ShowMeSample\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bti-odds.bsports.asia/api/SportsDataAPI/getevents",
+					"protocol": "https",
+					"host": [
+						"bti-odds",
+						"bsports",
+						"asia"
+					],
+					"path": [
+						"api",
+						"SportsDataAPI",
+						"getevents"
+					]
+				},
+				"description": "Directly calls the official Whale API using a mock PKey. Use this to quickly evaluate the JSON response structure of our sports events."
+			},
+			"response": []
+		}
+	]
+}

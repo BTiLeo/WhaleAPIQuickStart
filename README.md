@@ -1,25 +1,36 @@
-Whale API - QuickStart Integration
+# Whale API - QuickStart Integration
 
-Welcome to the Whale API QuickStart repository. This project provides minimal, production-ready examples of how to integrate with the Whale Sports Data API using various backend languages.
-System Architecture & Purpose
+[![View on GitHub](https://img.shields.io/badge/View_Source_on-GitHub-181717?logo=github&style=for-the-badge)](https://github.com/BTiLeo/WhaleAPIQuickStart)
+
+Welcome to the **Whale API QuickStart** repository. This project provides minimal, production-ready examples of how to integrate with the Whale Sports Data API using various backend languages.
+
+## System Architecture & Purpose
 
 The goal of this repository is to demonstrate a secure and efficient way to fetch sports data (events, odds, markets) from Whale API.
 
-Key Architectural Concept: To protect your Private Key (PKey), the frontend never communicates directly with the Whale API. Instead, the frontend calls a local "Backend Wrapper," which securely injects the PKey and forwards the request to the official Whale API.
-Installation & Execution Guide
-1. Obtain the Source Code
+**Key Architectural Concept:** To protect your Private Key (`PKey`), the frontend **never** communicates directly with the Whale API. Instead, the frontend calls a local "Backend Wrapper," which securely injects the `PKey` and forwards the request to the official Whale API.
+
+---
+
+## Installation & Execution Guide
+
+[![Run in Postman](https://img.shields.io/badge/Run_in-Postman-FF6C37?logo=postman&logoColor=white&style=for-the-badge)](WhaleAPI_Sample_Postman_Collection.json)
+> **No-Code API Evaluation:** Are you a PM, QA, or evaluating our API before writing code? Download the `WhaleAPI_Sample_Postman_Collection.json` file and import it into Postman. It comes pre-configured with a mock `PKey` so you can fetch real sports data instantly—no local server required!
+
+### 1. Obtain the Source Code
 
 You can acquire the project files using either Git or a direct download:
 
-Option A: Clone via Git (Recommended for Developers)
+**Option A: Clone via Git (Recommended for Developers)**
 ```bash
 git clone https://github.com/BTiLeo/WhaleAPIQuickStart.git
 cd WhaleAPIQuickStart
 ```
 
-Option B: Direct Download
-Download the project as a ZIP file, extract it, and open the folder in your terminal or code editor.
-2. Start the Backend Wrapper
+**Option B: Direct Download**
+[Download the project as a ZIP file](https://github.com/BTiLeo/WhaleAPIQuickStart/archive/refs/heads/main.zip), extract it, and open the folder in your terminal or code editor.
+
+### 2. Start the Backend Wrapper
 
 Select the backend language you are most comfortable with and start the server. Ensure you note the specific port number for your chosen environment:
 
@@ -29,7 +40,7 @@ Select the backend language you are most comfortable with and start the server. 
 cd BackendCSharp
 dotnet run
 ```
-The server will start at http://localhost:5000
+*The server will start at `http://localhost:5000`*
 {% endtab %}
 
 {% tab title="Python (Flask)" %}
@@ -38,7 +49,7 @@ cd BackendPython
 pip install -r requirements.txt
 python app.py
 ```
-The server will start at http://localhost:5001
+*The server will start at `http://localhost:5001`*
 {% endtab %}
 
 {% tab title="PHP" %}
@@ -46,7 +57,7 @@ The server will start at http://localhost:5001
 cd BackendPHP
 php -S localhost:5002
 ```
-The server will start at http://localhost:5002
+*The server will start at `http://localhost:5002`*
 {% endtab %}
 
 {% tab title="Node.js" %}
@@ -55,7 +66,7 @@ cd BackendNodeJS
 npm install
 npm start
 ```
-The server will start at http://localhost:5003
+*The server will start at `http://localhost:5003`*
 {% endtab %}
 
 {% tab title="Go" %}
@@ -63,27 +74,28 @@ The server will start at http://localhost:5003
 cd BackendGo
 go run main.go
 ```
-The server will start at http://localhost:5004
+*The server will start at `http://localhost:5004`*
 {% endtab %}
 {% endtabs %}
-3. Configure and Launch the Frontend
 
-    Open the frontend/app.js file in your code editor.
+### 3. Configure and Launch the Frontend
 
-    Locate the BACKEND_API_URL constant.
+1. Open the `frontend/app.js` file in your code editor.
+2. Locate the `BACKEND_API_URL` constant.
+3. Ensure the port matches the backend environment you just started (e.g., if you started Node.js, change the port to `5003`).
 
-    Ensure the port matches the backend environment you just started (e.g., if you started Node.js, change the port to 5003).
+   ```javascript
+   // Example configured for Node.js (Port 5003)
+   const BACKEND_API_URL = 'http://localhost:5003/api/getevents';
+   ```
 
-    ```javascript
-    // Example configured for Node.js (Port 5003)
-    const BACKEND_API_URL = 'http://localhost:5003/api/getevents';
-    ```
+4. Double-click the `frontend/index.html` file to open it in any modern web browser. You should see a rendered sports event card.
 
-    Double-click the frontend/index.html file to open it in any modern web browser. You should see a rendered sports event card.
+---
 
-Repository Structure
+## Repository Structure
 
-This repository is designed with a Shared Frontend and multiple Backend Wrappers. You only need to run the frontend and ONE of the backend environments of your choice.
+This repository is designed with a **Shared Frontend** and multiple **Backend Wrappers**. You only need to run the frontend and ONE of the backend environments of your choice.
 
 ```text
 WhaleAPIQuickStart/
@@ -94,14 +106,14 @@ WhaleAPIQuickStart/
 ├── BackendNodeJS/     # Node.js Express Backend
 └── BackendGo/         # Go (Golang) Native Backend
 ```
-Security Best Practices
 
-In this demonstration, we use a mocked key (ShowMeSample) for educational purposes to simulate a successful API response. In a real production environment:
+## Security Best Practices
 
-    Never hardcode your PKey in the source code. Use Environment Variables or a secure Key Vault.
+In this demonstration, we use a mocked key (`ShowMeSample`) for educational purposes to simulate a successful API response. In a real production environment:
 
-    Never expose your PKey to the frontend client (Browser/Mobile App). All API calls must originate from your secure backend servers.
+1. **Never** hardcode your `PKey` in the source code. Use Environment Variables or a secure Key Vault.
+2. **Never** expose your `PKey` to the frontend client (Browser/Mobile App). All API calls must originate from your secure backend servers.
+3. **Always** implement proper CORS policies and IP whitelisting on your backend wrapper to prevent unauthorized access.
 
-    Always implement proper CORS policies and IP whitelisting on your backend wrapper to prevent unauthorized access.
-
-Powered by BTi Integration Team.
+---
+*Powered by BTi Integration Team.*
