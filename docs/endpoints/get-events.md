@@ -6,7 +6,7 @@ This API only has two methods, /getevents returns events, markets, and selection
 
 ## getevents
 
-URL: \[POST] <https://bti-odds.bsports.asia/api/SportsDataAPI/getevents\\>
+URL: \[POST] <https://bti-odds.bsports.asia/api/SportsDataAPI/getevents>
 Note: POST data only supports JSON format.
 
 #### Query Parameters

@@ -3,12 +3,12 @@
  * Defines the URL of the local backend wrapper API.
  */
 // Uncomment the one you are using:
-// const BACKEND_API_URL = 'http://localhost:5062/api/getevents'; // C#
+// const BACKEND_API_URL = 'http://localhost:5000/api/getevents'; // C#
 // const BACKEND_API_URL = 'http://localhost:5001/api/getevents'; // Python
 // const BACKEND_API_URL = 'http://localhost:5002/api/getevents'; // PHP
 // const BACKEND_API_URL = 'http://localhost:5003/api/getevents'; // Node.js
 // const BACKEND_API_URL = 'http://localhost:5004/api/getevents'; // Go
-const BACKEND_API_URL = 'http://localhost:5062/api/getevents';
+const BACKEND_API_URL = 'http://localhost:5000/api/getevents';
 
 /**
  * Main function to fetch data and render the UI.
