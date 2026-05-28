@@ -28,7 +28,7 @@ cd WhaleAPIQuickStart
 ```
 
 **Option B: Direct Download**
-[Download the project as a ZIP file](https://github.com/BTiLeo/WhaleAPIQuickStart/archive/refs/heads/main.zip), extract it, and open the folder in your terminal or code editor.
+[Download the project as a ZIP file](https://github.com/BTiLeo/WhaleAPIQuickStart/archive/refs/heads/master.zip), extract it, and open the folder in your terminal or code editor.
 
 ### 2. Start the Backend Wrapper
 
